@@ -115,13 +115,14 @@ namespace RevitAddinAcademy_Challenge_06
 
             curPanel.AddStackedItems(pData3,pData4,pData5);
 
-
+            //add seperator between tools
             curPanel.AddSeparator();
 
             SplitButton splitButton = curPanel.AddItem(sData1) as SplitButton;
             splitButton.AddPushButton(pData6);
             splitButton.AddPushButton(pData7);
 
+            //add seperator between tools
             curPanel.AddSeparator();
 
             PulldownButton pulldownButton = curPanel.AddItem(pdData1) as PulldownButton;
@@ -129,6 +130,7 @@ namespace RevitAddinAcademy_Challenge_06
             pulldownButton.AddPushButton(pData9);
             pulldownButton.AddPushButton(pData10);
 
+            //add seperator at end of tools
             curPanel.AddSeparator();
 
             return Result.Succeeded;
